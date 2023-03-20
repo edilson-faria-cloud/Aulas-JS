@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STATUS NACIONALIDADE</title>
+</head>
+
+<body>
+    <h1>SISTEMA DE NACIONALIDADE</h1>
+    Sua Nacionalidade: <input type="text" name="ns" id="ns">
+    <input type="button" value="consultar" onclick="consultar()">
+    <div id="res"></div>
+    <script>
+
+        function consultar() {
+            var nac = window.document.querySelector('input#ns').value
+            var resultado = window.document.querySelector('div#res')
+            //var naci = String(nac.value)
+
+            if (nac == 'Brasil') {
+                resultado.innerHTML = '<p>Você é Brasileiro</p>'
+            } else {
+                resultado.innerHTML = '<p>Você é Estrangeiro</p>'
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
